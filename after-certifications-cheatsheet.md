@@ -58,3 +58,5 @@ Congratulations on becoming an IT Pro Certified! Now that you have achieved this
 **Conclusion**
 
 Now that you are an IT Pro Certified professional, you have the opportunity to take advantage of the many benefits that come with professional certification. By leveraging your certification for employment opportunities, maximizing your career growth, and gaining professional recognition, you can maximize the potential of your new status and unlock your potential.
+If you have any questions or need further assistance, feel free to reach out to me at [https://www.linkedin.com/in/silviotorre](https://www.linkedin.com/in/silviotorre). I'm here to help you succeed in your IT Pro Certification journey.
+Happy learning!
