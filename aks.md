@@ -1,20 +1,117 @@
+## Table of Contents
+1. [Get-AzAks](#get-azaaks)
+2. [Get-AzAksNode](#get-azaksnode)
+3. [Get-AzAksPod](#get-azakspod)
+4. [Get-AzAksService](#get-azaksservice)
+5. [Get-AzAksDiagnostics](#get-azaksdiagnostics)
+6. [Get-AzAksUpgrade](#get-azaksupgrade)
+7. [Get-AzAksScale](#get-azaksscale)
+8. [Get-AzAksLogs](#get-azakslogs)
+9. [Azure Context Setup](#azure-context-setup)
+10. [Kubectl Commands](#kubectl-commands)
+
 The following are some useful commands in PowerShell for AKS cluster, node, and pod administration and common troubleshooting:
 
-1. **Get-AzAks**: This command is used to list all the AKS clusters in the Azure subscription. It can be used to get information about the cluster, such as its name, resource group, location, version, and more.
+### PowerShell Commands for AKS
 
-2. **Get-AzAksNode**: This command is used to list all the nodes in an AKS cluster. It can be used to get information about the nodes, such as their name, IP address, operating system, and more.
+<a id="get-azaaks"></a>
+1. Get-AzAks  
+   Description: Lists all AKS clusters in your subscription.
+   ```  
+   Get-AzAks  
+   ```
 
-3. **Get-AzAksPod**: This command is used to list all the pods in an AKS cluster. It can be used to get information about the pods, such as their name, IP address, status, and more.
+<a id="get-azaksnode"></a>
+2. Get-AzAksNode  
+   Description: Retrieves details on all nodes in a given AKS cluster.
+   ```  
+   Get-AzAksNode  
+   ```
 
-4. **Get-AzAksService**: This command is used to list all the services in an AKS cluster. It can be used to get information about the services, such as their name, type, port, and more.
+<a id="get-azakspod"></a>
+3. Get-AzAksPod  
+   Description: Lists all pods running in the cluster.
+   ```  
+   Get-AzAksPod  
+   ```
 
-5. **Get-AzAksDiagnostics**: This command is used to retrieve diagnostic logs from an AKS cluster. It can be used to troubleshoot issues with the cluster or nodes.
+<a id="get-azaksservice"></a>
+4. Get-AzAksService  
+   Description: Shows all services available in the cluster.
+   ```  
+   Get-AzAksService  
+   ```
 
-6. **Get-AzAksUpgrade**: This command is used to list all the available upgrades for an AKS cluster. It can be used to upgrade the cluster to a newer version.
+<a id="get-azaksdiagnostics"></a>
+5. Get-AzAksDiagnostics  
+   Description: Retrieves diagnostic logs to help troubleshoot issues.
+   ```  
+   Get-AzAksDiagnostics  
+   ```
 
-7. **Get-AzAksScale**: This command is used to list the current scaling settings for an AKS cluster. It can be used to adjust the number of nodes in the cluster.
+<a id="get-azaksupgrade"></a>
+6. Get-AzAksUpgrade  
+   Description: Lists available upgrades for the AKS cluster.
+   ```  
+   Get-AzAksUpgrade  
+   ```
 
-8. **Get-AzAksLogs**: This command is used to retrieve logs from an AKS cluster. It can be used to troubleshoot issues with the cluster or nodes.
+<a id="get-azaksscale"></a>
+7. Get-AzAksScale  
+   Description: Displays current scaling settings; can be used to adjust node counts.
+   ```  
+   Get-AzAksScale  
+   ```
+
+<a id="get-azakslogs"></a>
+8. Get-AzAksLogs  
+   Description: Retrieves logs from the AKS cluster for troubleshooting.
+   ```  
+   Get-AzAksLogs  
+   ```
+
+<a id="azure-context-setup"></a>
+### Azure Context Setup
+
+Before running commands, set your Azure context:
+1. Connect-AzAccount  
+   Description: Log in to your Azure account.
+   ```  
+   Connect-AzAccount  
+   ```
+
+2. Select-AzSubscription  
+   Description: Choose the subscription you want to work with.
+   ```  
+   Select-AzSubscription -SubscriptionName "<YourSubscriptionName>"  
+   ```
+
+3. Set-AzContext  
+   Description: Set the context to the resource group that holds your AKS cluster.
+   ```  
+   Set-AzContext -ResourceGroupName "<YourResourceGroup>"  
+   ```
+
+<a id="kubectl-commands"></a>
+### Kubernetes Administrative Commands
+
+1. kubectl drain  
+   Description: Safely evicts all pods from a node before maintenance.
+   ```  
+   kubectl drain <node-name> --ignore-daemonsets  
+   ```
+
+2. kubectl cordon  
+   Description: Marks a node as unschedulable.
+   ```  
+   kubectl cordon <node-name>  
+   ```
+
+3. kubectl taint  
+   Description: Adds, modifies, or removes taints to control pod scheduling.
+   ```  
+   kubectl taint nodes <node-name> key=value:NoSchedule  
+   ```
 
 In order to use the above commands, you will need to have the appropriate permissions. For example, you will need to be an Owner or Contributor of the resource group containing the AKS cluster in order to use the Get-AzAks command.
 
