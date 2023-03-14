@@ -1,5 +1,7 @@
 # Miniguide
 
+A collection of useful cheatsheets and guides for developers.
+
 ## 📌 Introduction
 This repository contains a collection of cheatsheets and guides to help DevOps professionals manage and troubleshoot various technologies and resources.
 
@@ -48,12 +50,14 @@ A detailed change history can be found in the [CHANGELOG.md](changelog.txt) file
 - 📜 [Bash, sed & awk](bash-sed-awk-cheatsheet.md) - Text processing commands in Bash.
 - 🖥️ [Windows Network Troubleshooting](windows-network-cheatsheet.md) - Resolving network issues in Windows.
 - 🔄 [Windows Remote Restart](windows-remote-restart-cheatsheet.md) - Commands for remote restart in Windows.
+- 👷🏼‍♂️ [Pipelines Bash and PowerShell Cheatsheet](pipelines-bash-powershell-cheatsheet.md): A guide for working with pipelines using Bash and PowerShell.
 
 ### 🔗 CLI & Automation
 - 🖥️ [Azure CLI](az-cli-cheatsheet.md) - Key Azure CLI commands.
 - ⚡ [AZ CLI & PowerShell Update](azcli-powershell-update-cheatsheet.md) - Updating Azure CLI and PowerShell modules.
 - 🔍 [Azure Graph](az-graph-cheatsheet.md) - Querying with Azure Resource Graph.
 - 🔀 [Git](git-cheatsheet.md) - Essential commands for repository management.
+- ⚙️[Git Repo Cheatsheet](git_repo_cheatsheet.md): A quick reference for common Git repository best practices.
 - 📊 [Data Lifecycle](data-lifecycle-cheatsheet.md) - Automating data management and retention policies.
 - 🔑 [AD SSH & Certificate-Based Login](ad-ssh-cert-login-cheatsheet.md) - SSH authentication using Active Directory.
 - 🔄 [Pipelines in Bash & PowerShell](pipelines-bash-powershell-cheatsheet.md) - Examples of sorting, filtering, and presenting data using pipelines.
