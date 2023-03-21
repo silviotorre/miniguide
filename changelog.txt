@@ -1,0 +1,10 @@
+Changelog
+=========
+
+Version 1.1 - [Date]
+--------------------
+- Added cheatsheet for Azure Function Apps & App Service Plans.
+- Added cheatsheet for Azure Subscriptions & Tenant management.
+- Added cheatsheet for Azure AD Service Principal management and troubleshooting.
+- Added cheatsheet for Azure login and certificate-based authentication.
+- Updated README.md to include links to new cheatsheets.

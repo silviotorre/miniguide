@@ -1,6 +1,6 @@
 # Miniguide
 
-Welcome to the Miniguide repository! This repository contains a collection of cheatsheets and guides to help you manage and troubleshoot various technologies, including Azure Kubernetes Service (AKS), Helm, Azure Container Registry (ACR), Azure Virtual Machines (VM), and Azure Storage Accounts.
+Welcome to the Miniguide repository! This repository contains a collection of cheatsheets and guides to help you manage and troubleshoot various technologies, including Azure Kubernetes Service (AKS), Helm, Azure Container Registry (ACR), Azure Virtual Machines (VM), Azure Storage Accounts, Azure Function Apps, App Service Plans, Azure Key Vault, Azure Graph, Azure CLI, Azure Subscriptions & Tenants, Azure AD Service Principals, and Azure login methods.
 
 ## Contents
 
@@ -10,10 +10,14 @@ Welcome to the Miniguide repository! This repository contains a collection of ch
 - [Azure ACR Cheatsheet](azure-acr-cheatsheet.md)
 - [Azure VM Cheatsheet](azure-vm-cheatsheet.md)
 - [Azure Storage Account Cheatsheet](azure-storage-cheatsheet.md)
+- [Azure Function App & App Service Plan Cheatsheet](azure-functionapp-appserviceplan-cheatsheet.md)
 - [Azure Key Vault Cheatsheet](azure-keyvault-cheatsheet.md)
 - [Azure Graph Cheatsheet](az-graph-cheatsheet.md)
 - [Azure CLI Cheatsheet](az-cli-cheatsheet.md)
 - [Kusto Query Cheatsheet](kusto-cheatsheet.md)
+- [Azure Subscriptions & Tenant Cheatsheet](azure-subscriptions-tenant-cheatsheet.md)
+- [Azure AD & Service Principal Cheatsheet](az-ad-serviceprincipal-cheatsheet.md)
+- [Azure Login & Certificates Cheatsheet](az-login-certificates-cheatsheet.md)
 
 ## Cheatsheets and Guides
 
@@ -101,8 +105,19 @@ The [Kusto Query Cheatsheet](kusto-cheatsheet.md) provides examples of Kusto Que
 - Azure traces examples
 - Troubleshooting examples on Azure
 
+### Azure Function App & App Service Plan Cheatsheet
+Provides commands and tips for managing Function Apps and App Service Plans.
+
+### Azure Subscriptions & Tenant Cheatsheet
+Covers essential commands for managing subscriptions and tenants.
+
+### Azure AD & Service Principal Cheatsheet
+Focuses on creating and troubleshooting service principals and their role assignments.
+
+### Azure Login & Certificates Cheatsheet
+Demonstrates various authentication methods including interactive login and certificate-based login.
+
 ## Conclusion
 
-This repository aims to provide useful guides and cheatsheets to help you manage and troubleshoot various technologies effectively. Feel free to explore the provided documents and make the most out of the available resources.
-
+This repository aims to provide useful guides and cheatsheets to help manage and troubleshoot various Azure technologies effectively.
 Happy learning!
