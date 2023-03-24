@@ -56,6 +56,7 @@ A detailed change history can be found in the [CHANGELOG.md](changelog.txt) file
 - 🔀 [Git](git-cheatsheet.md) - Essential commands for repository management.
 - 📊 [Data Lifecycle](data-lifecycle-cheatsheet.md) - Automating data management and retention policies.
 - 🔑 [AD SSH & Certificate-Based Login](ad-ssh-cert-login-cheatsheet.md) - SSH authentication using Active Directory.
+- 🔄 [Pipelines in Bash & PowerShell](pipelines-bash-powershell-cheatsheet.md) - Examples of sorting, filtering, and presenting data using pipelines.
 
 ## 🎯 Conclusion
 This repository provides tools and resources to improve DevOps infrastructure management and troubleshooting.
