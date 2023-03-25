@@ -39,13 +39,35 @@ Sorts the contents of `file.txt` alphabetically.
 ```powershell
 Get-Content file.txt | Where-Object { $_ -match "pattern" }
 ```
-Filters lines in `file.txt` that match the specified pattern.
+Filters lines in `file.txt` that match the specified pattern. You can also check for a specific string using findstr (_findsrt_ is a Windows command-line utility):
+```powershell
+Get-ChildItem | findstr "pattern"
+```
 
 ### Presenting Data
 ```powershell
 Get-ChildItem | Select-Object Name, Length
 ```
 Displays the file name and size from the `Get-ChildItem` command output.
+### Display as table
+```powershell
+Get-ChildItem | Select-Object Name, Length | Format-Table -AutoSize
+```
+displays the file name and size from the `Get-ChildItem` command output in a table format. you can also use `Format-List` to display the output in a list format:
+```powershell
+Get-ChildItem | Select-Object Name, Length | Format-List
+```
+### Display as grid
+```powershell
+Get-ChildItem | Select-Object Name, Length | Out-GridView
+```
+This command displays the file name and size from the `Get-ChildItem` command output in a grid view, allowing for easier data exploration.
+### Display as chart
+```powershell
+Get-ChildItem | Select-Object Name, Length | Out-Chart
+``` 
+This command displays the file name and size from the `Get-ChildItem` command output in a chart format, allowing for visual representation of the data.
+
 
 ---
 
