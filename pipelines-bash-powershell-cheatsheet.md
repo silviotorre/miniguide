@@ -62,12 +62,16 @@ Get-ChildItem | Select-Object Name, Length | Format-List
 Get-ChildItem | Select-Object Name, Length | Out-GridView
 ```
 This command displays the file name and size from the `Get-ChildItem` command output in a grid view, allowing for easier data exploration.
-### Display as chart
-```powershell
-Get-ChildItem | Select-Object Name, Length | Out-Chart
-``` 
-This command displays the file name and size from the `Get-ChildItem` command output in a chart format, allowing for visual representation of the data.
 
+### Display as HTML
+```powershell
+Get-ChildItem | Select-Object Name, Length | ConvertTo-Html -Fragment | Out-File output.html
+``` 
+This command converts the output of `Get-ChildItem` to HTML format and saves it to `output.html`. You can also use `ConvertTo-Json` to convert the output to JSON format:
+```powershell
+Get-ChildItem | Select-Object Name, Length | ConvertTo-Json | Out-File output.json
+``` 
+This command converts the output of `Get-ChildItem` to JSON format and saves it to `output.json`. 
 
 ---
 
