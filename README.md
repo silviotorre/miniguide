@@ -1,6 +1,6 @@
 # Miniguide
 
-Welcome to the Miniguide repository! This repository contains a collection of cheatsheets and guides to help you manage and troubleshoot various technologies, including Azure Kubernetes Service (AKS), Helm, Azure Container Registry (ACR), Azure Virtual Machines (VM), Azure Storage Accounts, Azure Function Apps, App Service Plans, Azure Key Vault, Azure Graph, Azure CLI, Azure Subscriptions & Tenants, Azure AD Service Principals, and Azure login methods.
+Welcome to the Miniguide repository! This repository contains a collection of cheatsheets and guides to help you manage and troubleshoot various technologies, including Azure Kubernetes Service (AKS), Helm, Azure Container Registry (ACR), Azure Virtual Machines (VM), Azure Storage Accounts, Azure Function Apps, App Service Plans, Azure Key Vault, Azure Graph, Azure CLI, Azure Subscriptions & Tenants, Azure AD Service Principals, Azure login methods, Docker, Azure PowerShell modules, Bash text processing, and terminal logins for Azure DevOps/Microsoft 365.
 
 ## Contents
 
@@ -18,6 +18,10 @@ Welcome to the Miniguide repository! This repository contains a collection of ch
 - [Azure Subscriptions & Tenant Cheatsheet](azure-subscriptions-tenant-cheatsheet.md)
 - [Azure AD & Service Principal Cheatsheet](az-ad-serviceprincipal-cheatsheet.md)
 - [Azure Login & Certificates Cheatsheet](az-login-certificates-cheatsheet.md)
+- [Docker Cheatsheet](docker-cheatsheet.md)
+- [Azure PowerShell Modules Cheatsheet](azure-powershell-modules-cheatsheet.md)
+- [Bash, sed & awk Cheatsheet](bash-sed-awk-cheatsheet.md)
+- [Azure DevOps & Microsoft 365 Login Cheatsheet](azure-devops-m365-login-cheatsheet.md)
 
 ## Cheatsheets and Guides
 
@@ -117,7 +121,19 @@ Focuses on creating and troubleshooting service principals and their role assign
 ### Azure Login & Certificates Cheatsheet
 Demonstrates various authentication methods including interactive login and certificate-based login.
 
+### Docker Cheatsheet
+Provides essential Docker commands for building, running, and troubleshooting containerized applications.
+
+### Azure PowerShell Modules Cheatsheet
+Key cmdlets for managing Azure resources using Azure PowerShell modules.
+
+### Bash, sed & awk Cheatsheet
+A collection of common text processing commands in Bash using sed and awk.
+
+### Azure DevOps & Microsoft 365 Login Cheatsheet
+Covers authentication steps and troubleshooting for logging into Azure DevOps and Microsoft 365 from the terminal.
+
 ## Conclusion
 
-This repository aims to provide useful guides and cheatsheets to help manage and troubleshoot various Azure technologies effectively.
+This repository aims to provide useful guides and cheatsheets to help manage and troubleshoot various technologies effectively.
 Happy learning!

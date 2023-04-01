@@ -1,6 +1,14 @@
 Changelog
 =========
 
+Version 1.2 - [Date]
+--------------------
+- Added cheatsheet for Docker commands.
+- Added cheatsheet for Azure PowerShell Modules.
+- Added cheatsheet for bash, sed & awk commands.
+- Added cheatsheet for Azure DevOps & Microsoft 365 Login.
+- Updated README.md to include new cheatsheets.
+
 Version 1.1 - [Date]
 --------------------
 - Added cheatsheet for Azure Function Apps & App Service Plans.
