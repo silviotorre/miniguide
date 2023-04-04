@@ -1,6 +1,14 @@
 Changelog
 =========
 
+Version 1.3 - [Date]
+--------------------
+- Added Git Cheatsheet.
+- Added PowerShell REST API Modules Cheatsheet.
+- Added System Troubleshooting Cheatsheet.
+- Added AD SSH & Certificate-Based Login Cheatsheet.
+- Updated README.md to include links to new cheatsheets.
+
 Version 1.2 - [Date]
 --------------------
 - Added cheatsheet for Docker commands.

@@ -1,6 +1,6 @@
 # Miniguide
 
-Welcome to the Miniguide repository! This repository contains a collection of cheatsheets and guides to help you manage and troubleshoot various technologies, including Azure Kubernetes Service (AKS), Helm, Azure Container Registry (ACR), Azure Virtual Machines (VM), Azure Storage Accounts, Azure Function Apps, App Service Plans, Azure Key Vault, Azure Graph, Azure CLI, Azure Subscriptions & Tenants, Azure AD Service Principals, Azure login methods, Docker, Azure PowerShell modules, Bash text processing, and terminal logins for Azure DevOps/Microsoft 365.
+Welcome to the Miniguide repository! This repository contains a collection of cheatsheets and guides to help you manage and troubleshoot various technologies, including Azure Kubernetes Service (AKS), Helm, Azure Container Registry (ACR), Azure Virtual Machines (VM), Azure Storage Accounts, Azure Function Apps, App Service Plans, Azure Key Vault, Azure Graph, Azure CLI, Azure Subscriptions & Tenants, Azure AD Service Principals, Azure login methods, Docker, Azure PowerShell modules, Bash text processing, terminal logins for Azure DevOps/Microsoft 365, Git, PowerShell REST API modules, system troubleshooting commands, and AD SSH/certificate based logins.
 
 ## Contents
 
@@ -22,6 +22,10 @@ Welcome to the Miniguide repository! This repository contains a collection of ch
 - [Azure PowerShell Modules Cheatsheet](azure-powershell-modules-cheatsheet.md)
 - [Bash, sed & awk Cheatsheet](bash-sed-awk-cheatsheet.md)
 - [Azure DevOps & Microsoft 365 Login Cheatsheet](azure-devops-m365-login-cheatsheet.md)
+- [Git Cheatsheet](git-cheatsheet.md)
+- [PowerShell REST API Modules Cheatsheet](powershell-restapi-modules-cheatsheet.md)
+- [System Troubleshooting Cheatsheet](system-troubleshooting-cheatsheet.md)
+- [AD SSH & Certificate-Based Login Cheatsheet](ad-ssh-cert-login-cheatsheet.md)
 
 ## Cheatsheets and Guides
 
@@ -132,6 +136,18 @@ A collection of common text processing commands in Bash using sed and awk.
 
 ### Azure DevOps & Microsoft 365 Login Cheatsheet
 Covers authentication steps and troubleshooting for logging into Azure DevOps and Microsoft 365 from the terminal.
+
+### Git Cheatsheet
+Provides essential Git commands for version control and repository management.
+
+### PowerShell REST API Modules Cheatsheet
+Key cmdlets and modules for interacting with REST APIs via PowerShell.
+
+### System Troubleshooting Cheatsheet
+Essential commands for diagnosing and troubleshooting system issues on Linux and Windows.
+
+### AD SSH & Certificate-Based Login Cheatsheet
+Covers methods for integrating SSH with Active Directory and effortless certificate-based login.
 
 ## Conclusion
 
