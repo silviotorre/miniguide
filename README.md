@@ -1,6 +1,6 @@
 # Miniguide
 
-Welcome to the Miniguide repository! This repository contains a collection of cheatsheets and guides to help you manage and troubleshoot various technologies, including Azure Kubernetes Service (AKS), Helm, Azure Container Registry (ACR), Azure Virtual Machines (VM), Azure Storage Accounts, Azure Function Apps, App Service Plans, Azure Key Vault, Azure Graph, Azure CLI, Azure Subscriptions & Tenants, Azure AD Service Principals, Azure login methods, Docker, Azure PowerShell modules, Bash text processing, terminal logins for Azure DevOps/Microsoft 365, Git, PowerShell REST API modules, system troubleshooting commands, and AD SSH/certificate based logins.
+Welcome to the Miniguide repository! This repository contains a collection of cheatsheets and guides to help you manage and troubleshoot various technologies, including Azure Kubernetes Service (AKS), Helm, Azure Container Registry (ACR), Azure Virtual Machines (VM), Azure Storage Accounts, Azure Function Apps, App Service Plans, Azure Key Vault, Azure Graph, Azure CLI, Azure Subscriptions & Tenants, Azure AD Service Principals, Azure login methods, Docker, Azure PowerShell modules, Bash text processing, terminal logins for Azure DevOps/Microsoft 365, Git, PowerShell REST API modules, system troubleshooting commands, AD SSH/certificate based logins, SQL commands, Azure SQL, Azure Auth & AuthZ, and Data Lifecycle Management.
 
 ## Contents
 
@@ -26,6 +26,10 @@ Welcome to the Miniguide repository! This repository contains a collection of ch
 - [PowerShell REST API Modules Cheatsheet](powershell-restapi-modules-cheatsheet.md)
 - [System Troubleshooting Cheatsheet](system-troubleshooting-cheatsheet.md)
 - [AD SSH & Certificate-Based Login Cheatsheet](ad-ssh-cert-login-cheatsheet.md)
+- [SQL Cheatsheet](sql-cheatsheet.md)
+- [Azure SQL Cheatsheet](azure-sql-cheatsheet.md)
+- [Azure Auth & AuthZ Cheatsheet](azure-auth-authz-cheatsheet.md)
+- [Data Lifecycle Cheatsheet](data-lifecycle-cheatsheet.md)
 
 ## Cheatsheets and Guides
 
@@ -148,6 +152,18 @@ Essential commands for diagnosing and troubleshooting system issues on Linux and
 
 ### AD SSH & Certificate-Based Login Cheatsheet
 Covers methods for integrating SSH with Active Directory and effortless certificate-based login.
+
+### SQL Cheatsheet
+Provides standard SQL commands for database creation, management, and troubleshooting.
+
+### Azure SQL Cheatsheet
+Focuses on Azure managed SQL Database commands for creating, configuring, and monitoring databases.
+
+### Azure Auth & AuthZ Cheatsheet
+Covers commands and examples to manage authentication and authorization in Azure, including role assignments and policy audits.
+
+### Data Lifecycle Cheatsheet
+Offers examples for setting retention policies, TTL, and automating data cleanup in storage and logging systems.
 
 ## Conclusion
 

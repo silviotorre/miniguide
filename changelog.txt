@@ -1,6 +1,14 @@
 Changelog
 =========
 
+Version 1.4 - [Date]
+--------------------
+- Added SQL Cheatsheet.
+- Added Azure SQL Cheatsheet.
+- Added Azure Auth & AuthZ Cheatsheet.
+- Added Data Lifecycle Cheatsheet.
+- Updated README.md to include new cheatsheets.
+
 Version 1.3 - [Date]
 --------------------
 - Added Git Cheatsheet.
