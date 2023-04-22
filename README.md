@@ -1,6 +1,6 @@
 # Miniguide
 
-Welcome to the Miniguide repository! This repository contains a collection of cheatsheets and guides to help you manage and troubleshoot various technologies, including Azure Kubernetes Service (AKS), Helm, Azure Container Registry (ACR), Azure Virtual Machines (VM), Azure Storage Accounts, Azure Function Apps, App Service Plans, Azure Key Vault, Azure Graph, Azure CLI, Azure Subscriptions & Tenants, Azure AD Service Principals, Azure login methods, Docker, Azure PowerShell modules, Bash text processing, terminal logins for Azure DevOps/Microsoft 365, Git, PowerShell REST API modules, system troubleshooting commands, AD SSH/certificate based logins, SQL commands, Azure SQL, Azure Auth & AuthZ, and Data Lifecycle Management.
+Welcome to the Miniguide repository! This repository contains a collection of cheatsheets and guides to help you manage and troubleshoot various technologies, including Azure Kubernetes Service (AKS), Helm, Azure Container Registry (ACR), Azure Virtual Machines (VM), Azure Storage Accounts, Azure Function Apps, App Service Plans, Azure Key Vault, Azure Graph, Azure CLI, Azure Subscriptions & Tenants, Azure AD Service Principals, Azure login methods, Docker, Azure PowerShell modules, Bash text processing, terminal logins for Azure DevOps/Microsoft 365, Git, PowerShell REST API modules, system troubleshooting commands, AD SSH/certificate based logins, SQL commands, Azure SQL, Azure Auth & AuthZ, Data Lifecycle Management, **Windows Network Troubleshooting, Azure Backup, Linux Permissions & Sudoers, Linux Cron Jobs, and ADO Repos**.
 
 ## Contents
 
@@ -30,6 +30,11 @@ Welcome to the Miniguide repository! This repository contains a collection of ch
 - [Azure SQL Cheatsheet](azure-sql-cheatsheet.md)
 - [Azure Auth & AuthZ Cheatsheet](azure-auth-authz-cheatsheet.md)
 - [Data Lifecycle Cheatsheet](data-lifecycle-cheatsheet.md)
+- **[Windows Network Troubleshooting Cheatsheet](windows-network-cheatsheet.md)**
+- **[Azure Backup Cheatsheet](azure-backup-cheatsheet.md)**
+- **[Linux Permissions & Sudoers Cheatsheet](linux-permissions-cheatsheet.md)**
+- **[Linux Cron Cheatsheet](cron-linux-cheatsheet.md)**
+- **[ADO Repos Cheatsheet](ado-repos-cheatsheet.md)**
 
 ## Cheatsheets and Guides
 
@@ -167,5 +172,5 @@ Offers examples for setting retention policies, TTL, and automating data cleanup
 
 ## Conclusion
 
-This repository aims to provide useful guides and cheatsheets to help manage and troubleshoot various technologies effectively.
+This repository aims to provide useful guides and cheatsheets to help you manage and troubleshoot various technologies effectively.
 Happy learning!
