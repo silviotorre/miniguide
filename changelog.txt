@@ -1,6 +1,14 @@
 Changelog
 =========
 
+Version 1.5 - [Date]
+--------------------
+- Added Windows Remote Restart Cheatsheet.
+- Added AZ CLI & PowerShell Update Cheatsheet.
+- Added Cache and Temporary Files Management Cheatsheet.
+- Added ARM Templates Cheatsheet.
+- Updated README.md to include new cheatsheets.
+
 Version 1.4 - [Date]
 --------------------
 - Added Windows Network Troubleshooting Cheatsheet.
