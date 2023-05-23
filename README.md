@@ -3,7 +3,9 @@
 ## Introduction
 This repository contains a collection of cheatsheets and guides to help DevOps personnel manage and troubleshoot diverse technologies and resources.
 
-Welcome to the Miniguide repository! This repository contains a collection of cheatsheets and guides to help you manage and troubleshoot various technologies, including Azure Kubernetes Service (AKS), Helm, Azure Container Registry (ACR), Azure Virtual Machines (VM), Azure Storage Accounts, Azure Function Apps, App Service Plans, Azure Key Vault, Azure Graph, Azure CLI, Azure Subscriptions & Tenants, Azure AD Service Principals, Azure login methods, Docker, Azure PowerShell modules, Bash text processing, terminal logins for Azure DevOps/Microsoft 365, Git, PowerShell REST API modules, system troubleshooting commands, AD SSH/certificate based logins, SQL commands, Azure SQL, Azure Auth & AuthZ, Data Lifecycle Management, **Windows Network Troubleshooting, Azure Backup, Linux Permissions & Sudoers, Linux Cron Jobs, and ADO Repos**.
+Welcome to the Miniguide repository! This repository contains a collection of cheatsheets and guides to help you manage and troubleshoot various technologies, including Azure Kubernetes Service (AKS), Helm, Azure Container Registry (ACR), Azure Virtual Machines (VM), Azure Storage Accounts, Azure Function Apps, App Service Plans, Azure Key Vault, Azure Graph, Azure CLI, Azure Subscriptions & Tenants, Azure AD Service Principals, Azure login methods, Docker, Azure PowerShell modules, Bash text processing, terminal logins for Azure DevOps/Microsoft 365, Git, PowerShell REST API modules, system troubleshooting commands, AD SSH/certificate based logins, SQL commands, Azure SQL, Azure Auth & AuthZ, Data Lifecycle Management, Windows Network Troubleshooting, Azure Backup, Linux Permissions & Sudoers, Linux Cron Jobs, and ADO Repos.
+
+A detailed history of changes can be found in the [CHANGELOG.md](CHANGELOG.md) file.
 
 ## Contents
 
@@ -30,11 +32,19 @@ Welcome to the Miniguide repository! This repository contains a collection of ch
 - [Azure SQL Cheatsheet](azure-sql-cheatsheet.md)
 - [Azure Auth & AuthZ Cheatsheet](azure-auth-authz-cheatsheet.md)
 - [Data Lifecycle Cheatsheet](data-lifecycle-cheatsheet.md)
-- **[Windows Network Troubleshooting Cheatsheet](windows-network-cheatsheet.md)**
-- **[Azure Backup Cheatsheet](azure-backup-cheatsheet.md)**
-- **[Linux Permissions & Sudoers Cheatsheet](linux-permissions-cheatsheet.md)**
-- **[Linux Cron Cheatsheet](cron-linux-cheatsheet.md)**
-- **[ADO Repos Cheatsheet](ado-repos-cheatsheet.md)**
+- [Windows Network Troubleshooting Cheatsheet](windows-network-cheatsheet.md)
+- [Azure Backup Cheatsheet](azure-backup-cheatsheet.md)
+- [Linux Permissions & Sudoers Cheatsheet](linux-permissions-cheatsheet.md)
+- [Linux Cron Cheatsheet](cron-linux-cheatsheet.md)
+- [ADO Repos Cheatsheet](ado-repos-cheatsheet.md)
+- [Azure Login & Certificates Cheatsheet](az-login-certificates-cheatsheet.md) - Demonstrates various authentication methods including interactive login and certificate-based login.
+- [Azure Subscriptions & Tenant Cheatsheet](azure-subscriptions-tenant-cheatsheet.md) - Covers essential commands for managing subscriptions and tenants.
+- [Azure AD & Service Principal Cheatsheet](az-ad-serviceprincipal-cheatsheet.md) - Focuses on creating and troubleshooting service principals and their role assignments.
+- [Azure Graph Cheatsheet](az-graph-cheatsheet.md) - Provides commands for querying Azure Resource Graph.
+- [Azure Monitoring Cheatsheet](azure-monitoring-cheatsheet.md) - Provides commands for tracking and monitoring Azure resources.
+- [Cache and Temporary Files Management Cheatsheet](cache-temp-files-cheatsheet.md) - Offers tips and commands for managing cache and temporary files.
+- [ARM Templates Cheatsheet](arm-templates-cheatsheet.md) - Provides examples for working with ARM templates and Bicep files.
+- [AZ CLI & PowerShell Update Cheatsheet](azcli-powershell-update-cheatsheet.md) - Offers examples for updating Azure CLI and Az PowerShell modules.
 
 ## Cheatsheets and Guides
 
@@ -169,6 +179,33 @@ Covers commands and examples to manage authentication and authorization in Azure
 
 ### Data Lifecycle Cheatsheet
 Offers examples for setting retention policies, TTL, and automating data cleanup in storage and logging systems.
+
+### Windows Network Troubleshooting Cheatsheet
+Provides commands for troubleshooting network issues on Windows systems.
+
+### Azure Backup Cheatsheet
+Provides guidance on backing up and restoring data in Azure.
+
+### Linux Permissions & Sudoers Cheatsheet
+Provides guidance on managing file permissions and sudoers on Linux systems.
+
+### Linux Cron Cheatsheet
+Provides guidance on scheduling tasks using cron on Linux systems.
+
+### ADO Repos Cheatsheet
+Provides guidance on managing Azure DevOps Repos.
+
+### Azure Monitoring Cheatsheet
+Provides commands for tracking and monitoring Azure resources.
+
+### Cache and Temporary Files Management Cheatsheet
+Offers tips and commands for managing cache and temporary files.
+
+### ARM Templates Cheatsheet
+Provides examples for working with ARM templates and Bicep files.
+
+### AZ CLI & PowerShell Update Cheatsheet
+Offers examples for updating Azure CLI and Az PowerShell modules.
 
 ## Conclusion
 
