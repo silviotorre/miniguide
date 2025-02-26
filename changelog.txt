@@ -1,6 +1,39 @@
 Changelog
 =========
 
+Version 1.5 - [Date]
+--------------------
+- Added Windows Remote Restart Cheatsheet.
+- Added AZ CLI & PowerShell Update Cheatsheet.
+- Added Cache and Temporary Files Management Cheatsheet.
+- Added ARM Templates Cheatsheet.
+- Updated README.md to include new cheatsheets.
+
+Version 1.4 - [Date]
+--------------------
+- Added Windows Network Troubleshooting Cheatsheet.
+- Added Azure Backup Cheatsheet.
+- Added Linux Permissions & Sudoers Cheatsheet.
+- Added Linux Cron Cheatsheet.
+- Added ADO Repos Cheatsheet.
+- Updated README.md to include new cheatsheets.
+
+Version 1.3 - [Date]
+--------------------
+- Added Git Cheatsheet.
+- Added PowerShell REST API Modules Cheatsheet.
+- Added System Troubleshooting Cheatsheet.
+- Added AD SSH & Certificate-Based Login Cheatsheet.
+- Updated README.md to include links to new cheatsheets.
+
+Version 1.2 - [Date]
+--------------------
+- Added cheatsheet for Docker commands.
+- Added cheatsheet for Azure PowerShell Modules.
+- Added cheatsheet for bash, sed & awk commands.
+- Added cheatsheet for Azure DevOps & Microsoft 365 Login.
+- Updated README.md to include new cheatsheets.
+
 Version 1.1 - [Date]
 --------------------
 - Added cheatsheet for Azure Function Apps & App Service Plans.
