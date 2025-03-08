@@ -5,8 +5,6 @@ This repository contains a collection of cheatsheets and guides to help DevOps p
 
 Welcome to the Miniguide repository! This repository contains a collection of cheatsheets and guides to help you manage and troubleshoot various technologies, including Azure Kubernetes Service (AKS), Helm, Azure Container Registry (ACR), Azure Virtual Machines (VM), Azure Storage Accounts, Azure Function Apps, App Service Plans, Azure Key Vault, Azure Graph, Azure CLI, Azure Subscriptions & Tenants, Azure AD Service Principals, Azure login methods, Docker, Azure PowerShell modules, Bash text processing, terminal logins for Azure DevOps/Microsoft 365, Git, PowerShell REST API modules, system troubleshooting commands, AD SSH/certificate based logins, SQL commands, Azure SQL, Azure Auth & AuthZ, Data Lifecycle Management, Windows Network Troubleshooting, Azure Backup, Linux Permissions & Sudoers, Linux Cron Jobs, and ADO Repos.
 
-A detailed history of changes can be found in the [CHANGELOG.md](CHANGELOG.md) file.
-
 ## Contents
 
 - [Helm for AKS Cheatsheet](aks-helm-cheatsheet.md)
