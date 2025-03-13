@@ -1,213 +1,63 @@
 # Miniguide
 
-## Introduction
-This repository contains a collection of cheatsheets and guides to help DevOps personnel manage and troubleshoot diverse technologies and resources.
+## 📌 Introduction
+This repository contains a collection of cheatsheets and guides to help DevOps professionals manage and troubleshoot various technologies and resources.
 
-Welcome to the Miniguide repository! This repository contains a collection of cheatsheets and guides to help you manage and troubleshoot various technologies, including Azure Kubernetes Service (AKS), Helm, Azure Container Registry (ACR), Azure Virtual Machines (VM), Azure Storage Accounts, Azure Function Apps, App Service Plans, Azure Key Vault, Azure Graph, Azure CLI, Azure Subscriptions & Tenants, Azure AD Service Principals, Azure login methods, Docker, Azure PowerShell modules, Bash text processing, terminal logins for Azure DevOps/Microsoft 365, Git, PowerShell REST API modules, system troubleshooting commands, AD SSH/certificate based logins, SQL commands, Azure SQL, Azure Auth & AuthZ, Data Lifecycle Management, Windows Network Troubleshooting, Azure Backup, Linux Permissions & Sudoers, Linux Cron Jobs, and ADO Repos.
+Welcome to the Miniguide repository! Here, you'll find cheatsheets and guides covering topics like Kubernetes (AKS), Helm, Azure DevOps, Azure Virtual Machines, Azure Storage, Azure SQL, Docker, Git, PowerShell, and more.
 
-A detailed history of changes can be found in the [CHANGELOG.md](CHANGELOG.md) file.
+A detailed change history can be found in the [CHANGELOG.md](changelog.txt) file.
 
-## Contents
+## 📂 Contents
 
-- [Helm for AKS Cheatsheet](aks-helm-cheatsheet.md)
-- [Azure AKS Cheatsheet](aks-cheatsheet.md)
-- [AKS PowerShell Commands](aks.md)
-- [Azure ACR Cheatsheet](azure-acr-cheatsheet.md)
-- [Azure VM Cheatsheet](azure-vm-cheatsheet.md)
-- [Azure Storage Account Cheatsheet](azure-storage-cheatsheet.md)
-- [Azure Function App & App Service Plan Cheatsheet](azure-functionapp-appserviceplan-cheatsheet.md)
-- [Azure Key Vault Cheatsheet](azure-keyvault-cheatsheet.md)
-- [Azure Graph Cheatsheet](az-graph-cheatsheet.md)
-- [Azure CLI Cheatsheet](az-cli-cheatsheet.md)
-- [Kusto Query Cheatsheet](kusto-cheatsheet.md)
-- [Docker Cheatsheet](docker-cheatsheet.md)
-- [Azure PowerShell Modules Cheatsheet](azure-powershell-modules-cheatsheet.md)
-- [Bash, sed & awk Cheatsheet](bash-sed-awk-cheatsheet.md)
-- [Azure DevOps & Microsoft 365 Login Cheatsheet](azure-devops-m365-login-cheatsheet.md)
-- [Git Cheatsheet](git-cheatsheet.md)
-- [PowerShell REST API Modules Cheatsheet](powershell-restapi-modules-cheatsheet.md)
-- [System Troubleshooting Cheatsheet](system-troubleshooting-cheatsheet.md)
-- [AD SSH & Certificate-Based Login Cheatsheet](ad-ssh-cert-login-cheatsheet.md)
-- [SQL Cheatsheet](sql-cheatsheet.md)
-- [Azure SQL Cheatsheet](azure-sql-cheatsheet.md)
-- [Azure Auth & AuthZ Cheatsheet](azure-auth-authz-cheatsheet.md)
-- [Data Lifecycle Cheatsheet](data-lifecycle-cheatsheet.md)
-- [Windows Network Troubleshooting Cheatsheet](windows-network-cheatsheet.md)
-- [Azure Backup Cheatsheet](azure-backup-cheatsheet.md)
-- [Linux Permissions & Sudoers Cheatsheet](linux-permissions-cheatsheet.md)
-- [Linux Cron Cheatsheet](cron-linux-cheatsheet.md)
-- [ADO Repos Cheatsheet](ado-repos-cheatsheet.md)
-- [Azure Login & Certificates Cheatsheet](az-login-certificates-cheatsheet.md) - Demonstrates various authentication methods including interactive login and certificate-based login.
-- [Azure Subscriptions & Tenant Cheatsheet](azure-subscriptions-tenant-cheatsheet.md) - Covers essential commands for managing subscriptions and tenants.
-- [Azure AD & Service Principal Cheatsheet](az-ad-serviceprincipal-cheatsheet.md) - Focuses on creating and troubleshooting service principals and their role assignments.
-- [Azure Graph Cheatsheet](az-graph-cheatsheet.md) - Provides commands for querying Azure Resource Graph.
-- [Azure Monitoring Cheatsheet](azure-monitoring-cheatsheet.md) - Provides commands for tracking and monitoring Azure resources.
-- [Cache and Temporary Files Management Cheatsheet](cache-temp-files-cheatsheet.md) - Offers tips and commands for managing cache and temporary files.
-- [ARM Templates Cheatsheet](arm-templates-cheatsheet.md) - Provides examples for working with ARM templates and Bicep files.
-- [AZ CLI & PowerShell Update Cheatsheet](azcli-powershell-update-cheatsheet.md) - Offers examples for updating Azure CLI and Az PowerShell modules.
+### 🚀 Kubernetes & AKS
+- 🐳 [Helm for AKS](aks-helm-cheatsheet.md) - Essential commands for managing Helm on AKS.
+- ☸️ [Azure AKS](aks-cheatsheet.md) - Guide to managing Kubernetes clusters on Azure.
+- 💻 [AKS PowerShell Commands](aks.md) - PowerShell commands for administering AKS.
 
-## Cheatsheets and Guides
+### 🏗️ Azure Infrastructure
+- 🎯 [Azure ACR](azure-acr-cheatsheet.md) - Managing Azure Container Registry.
+- 📦 [Azure Storage](azure-storage-cheatsheet.md) - Commands to manage storage accounts.
+- 🏠 [Azure Virtual Machines](azure-vm-cheatsheet.md) - Creating and managing VMs in Azure.
+- 🔑 [Azure Key Vault](azure-keyvault-cheatsheet.md) - Managing secrets and certificates.
+- 📊 [Azure Monitor](azure-monitoring-cheatsheet.md) - Tools for tracking and monitoring Azure resources.
+- 🔄 [Azure Backup](azure-backup-cheatsheet.md) - Backup and restore procedures.
+- 🏢 [Azure Subscriptions & Tenant](azure-subscriptions-tenant-cheatsheet.md) - Essential commands for managing subscriptions and tenants.
+- 🏗️ [ARM Templates](arm-templates-cheatsheet.md) - Examples for working with ARM and Bicep.
 
-### Helm for AKS Cheatsheet
+### 🔐 Authentication & Security
+- 🔑 [Azure AD & Service Principal](az-ad-serviceprincipal-cheatsheet.md) - Creating and managing service principals.
+- 🔐 [Azure Login & Certificates](az-login-certificates-cheatsheet.md) - Authentication methods including certificate-based login.
+- 🔄 [Azure Auth & AuthZ](azure-auth-authz-cheatsheet.md) - Managing authentication and authorization in Azure.
 
-The [Helm for AKS Cheatsheet](aks-helm-cheatsheet.md) provides essential commands and tips for using Helm with Azure Kubernetes Service (AKS). It covers:
+### 💾 Database & Querying
+- 📜 [SQL Cheatsheet](sql-cheatsheet.md) - Standard SQL commands.
+- 🏦 [Azure SQL](azure-sql-cheatsheet.md) - Managing Azure SQL Database.
+- 🔍 [Kusto Query Cheatsheet](kusto-cheatsheet.md) - Querying data with Kusto.
 
-- Installing Helm
-- Working with Helm charts
-- Managing Kubernetes resources
-- Working with AKS
+### 🛠️ DevOps & CI/CD
+- 🔄 [Azure DevOps & Microsoft 365 Login](azure-devops-m365-login-cheatsheet.md) - Authentication for Azure DevOps.
+- 📂 [ADO Repos](ado-repos-cheatsheet.md) - Managing Azure DevOps repositories.
+- 🔨 [Docker](docker-cheatsheet.md) - Essential commands for managing Docker containers.
+- 🔧 [PowerShell REST API Modules](powershell-restapi-modules-cheatsheet.md) - Interacting with REST APIs via PowerShell.
+- 🛠️ [System Troubleshooting](system-troubleshooting-cheatsheet.md) - Commands for diagnosing and troubleshooting systems.
+- 💾 [Cache & Temporary Files](cache-temp-files-cheatsheet.md) - Managing cache and temporary files.
 
-### Azure AKS Cheatsheet
+### 💻 Linux & Windows
+- 🐧 [Linux Cron](cron-linux-cheatsheet.md) - Scheduling tasks in Linux.
+- 🔐 [Linux Permissions & Sudoers](linux-permissions-cheatsheet.md) - Managing file permissions and sudo access.
+- 📜 [Bash, sed & awk](bash-sed-awk-cheatsheet.md) - Text processing commands in Bash.
+- 🖥️ [Windows Network Troubleshooting](windows-network-cheatsheet.md) - Resolving network issues in Windows.
+- 🔄 [Windows Remote Restart](windows-remote-restart-cheatsheet.md) - Commands for remote restart in Windows.
 
-The [Azure AKS Cheatsheet](aks-cheatsheet.md) is an essential guide for managing your Kubernetes clusters on Azure. It includes:
+### 🔗 CLI & Automation
+- 🖥️ [Azure CLI](az-cli-cheatsheet.md) - Key Azure CLI commands.
+- ⚡ [AZ CLI & PowerShell Update](azcli-powershell-update-cheatsheet.md) - Updating Azure CLI and PowerShell modules.
+- 🔍 [Azure Graph](az-graph-cheatsheet.md) - Querying with Azure Resource Graph.
+- 🔀 [Git](git-cheatsheet.md) - Essential commands for repository management.
+- 📊 [Data Lifecycle](data-lifecycle-cheatsheet.md) - Automating data management and retention policies.
+- 🔑 [AD SSH & Certificate-Based Login](ad-ssh-cert-login-cheatsheet.md) - SSH authentication using Active Directory.
 
-- Getting started with AKS
-- Configuring your cluster
-- Managing your cluster
-- Troubleshooting
+## 🎯 Conclusion
+This repository provides tools and resources to improve DevOps infrastructure management and troubleshooting.
 
-### AKS PowerShell Commands
-
-The [AKS PowerShell Commands](aks.md) guide lists useful PowerShell commands for managing AKS clusters, nodes, and pods. It includes:
-
-- Listing AKS clusters, nodes, and pods
-- Retrieving diagnostic logs
-- Upgrading and scaling clusters
-- Using `kubectl` for administrative tasks
-
-### Azure ACR Cheatsheet
-
-The [Azure ACR Cheatsheet](azure-acr-cheatsheet.md) provides essential commands for managing and troubleshooting Azure Container Registry. It includes:
-
-- Creating and managing ACR
-- Building and importing container images
-- Running tasks in ACR
-- Viewing repository manifests
-
-### Azure VM Cheatsheet
-
-The [Azure VM Cheatsheet](azure-vm-cheatsheet.md) offers essential commands for managing Azure Virtual Machines. It includes:
-
-- Creating and managing VMs
-- Starting, stopping, and deallocating VMs
-- Capturing VM images
-- Adding VM extensions
-
-### Azure Storage Account Cheatsheet
-
-The [Azure Storage Account Cheatsheet](azure-storage-cheatsheet.md) provides commands for managing and troubleshooting Azure Storage Accounts. It includes:
-
-- Creating and managing storage accounts
-- Listing and renewing storage account keys
-- Creating storage containers
-- Uploading and downloading blobs
-
-### Azure Key Vault Cheatsheet
-
-The [Azure Key Vault Cheatsheet](azure-keyvault-cheatsheet.md) offers commands for managing secrets, keys, and certificates in Azure Key Vault. It includes:
-
-- Creating and managing key vaults
-- Managing secrets, keys, and certificates
-
-### Azure Graph Cheatsheet
-
-The [Azure Graph Cheatsheet](az-graph-cheatsheet.md) provides commands for querying Azure Resource Graph. It includes:
-
-- Basic queries
-- Advanced query examples
-
-### Azure CLI Cheatsheet
-
-The [Azure CLI Cheatsheet](az-cli-cheatsheet.md) offers essential commands for managing Azure resources using Azure CLI. It includes:
-
-- Authentication and account management
-- Managing resource groups and resources
-- Common resource operations
-
-### Kusto Query Cheatsheet
-
-The [Kusto Query Cheatsheet](kusto-cheatsheet.md) provides examples of Kusto Query Language (KQL) for analyzing data. It includes:
-
-- Basic query examples
-- Azure traces examples
-- Troubleshooting examples on Azure
-
-### Azure Function App & App Service Plan Cheatsheet
-Provides commands and tips for managing Function Apps and App Service Plans.
-
-### Azure Subscriptions & Tenant Cheatsheet
-Covers essential commands for managing subscriptions and tenants.
-
-### Azure AD & Service Principal Cheatsheet
-Focuses on creating and troubleshooting service principals and their role assignments.
-
-### Azure Login & Certificates Cheatsheet
-Demonstrates various authentication methods including interactive login and certificate-based login.
-
-### Docker Cheatsheet
-Provides essential Docker commands for building, running, and troubleshooting containerized applications.
-
-### Azure PowerShell Modules Cheatsheet
-Key cmdlets for managing Azure resources using Azure PowerShell modules.
-
-### Bash, sed & awk Cheatsheet
-A collection of common text processing commands in Bash using sed and awk.
-
-### Azure DevOps & Microsoft 365 Login Cheatsheet
-Covers authentication steps and troubleshooting for logging into Azure DevOps and Microsoft 365 from the terminal.
-
-### Git Cheatsheet
-Provides essential Git commands for version control and repository management.
-
-### PowerShell REST API Modules Cheatsheet
-Key cmdlets and modules for interacting with REST APIs via PowerShell.
-
-### System Troubleshooting Cheatsheet
-Essential commands for diagnosing and troubleshooting system issues on Linux and Windows.
-
-### AD SSH & Certificate-Based Login Cheatsheet
-Covers methods for integrating SSH with Active Directory and effortless certificate-based login.
-
-### SQL Cheatsheet
-Provides standard SQL commands for database creation, management, and troubleshooting.
-
-### Azure SQL Cheatsheet
-Focuses on Azure managed SQL Database commands for creating, configuring, and monitoring databases.
-
-### Azure Auth & AuthZ Cheatsheet
-Covers commands and examples to manage authentication and authorization in Azure, including role assignments and policy audits.
-
-### Data Lifecycle Cheatsheet
-Offers examples for setting retention policies, TTL, and automating data cleanup in storage and logging systems.
-
-### Windows Network Troubleshooting Cheatsheet
-Provides commands for troubleshooting network issues on Windows systems.
-
-### Azure Backup Cheatsheet
-Provides guidance on backing up and restoring data in Azure.
-
-### Linux Permissions & Sudoers Cheatsheet
-Provides guidance on managing file permissions and sudoers on Linux systems.
-
-### Linux Cron Cheatsheet
-Provides guidance on scheduling tasks using cron on Linux systems.
-
-### ADO Repos Cheatsheet
-Provides guidance on managing Azure DevOps Repos.
-
-### Azure Monitoring Cheatsheet
-Provides commands for tracking and monitoring Azure resources.
-
-### Cache and Temporary Files Management Cheatsheet
-Offers tips and commands for managing cache and temporary files.
-
-### ARM Templates Cheatsheet
-Provides examples for working with ARM templates and Bicep files.
-
-### AZ CLI & PowerShell Update Cheatsheet
-Offers examples for updating Azure CLI and Az PowerShell modules.
-
-## Conclusion
-
-This repository aims to provide useful guides and cheatsheets to help you manage and troubleshoot various technologies effectively.
-Happy learning!
+Happy learning! 🚀
