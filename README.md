@@ -61,3 +61,19 @@ A detailed change history can be found in the [CHANGELOG.md](changelog.txt) file
 This repository provides tools and resources to improve DevOps infrastructure management and troubleshooting.
 
 Happy learning! 🚀
+
+## 📚 Resources
+- [Azure DevOps Documentation](https://docs.microsoft.com/en-us/azure/devops/?view=azure-devops)
+- [Azure CLI Documentation](https://docs.microsoft.com/en-us/cli/azure/?view=azure-cli-latest)
+- [Azure PowerShell Documentation](https://docs.microsoft.com/en-us/powershell/azure/?view=azps-7.1.0)
+- [Kubernetes Documentation](https://kubernetes.io/docs/home/)
+- [Docker Documentation](https://docs.docker.com/)
+- [Git Documentation](https://git-scm.com/doc)
+- [Bash Documentation](https://www.gnu.org/software/bash/manual/bash.html)
+- [PowerShell Documentation](https://docs.microsoft.com/en-us/powershell/)
+- [SQL Documentation](https://dev.mysql.com/doc/)
+- [Azure Documentation](https://docs.microsoft.com/en-us/azure/?product=featured)
+- [Linux Documentation](https://www.kernel.org/doc/html/latest/index.html)
+  
+## 📝 License
+This repository is licensed under the [MIT License](LICENSE).
