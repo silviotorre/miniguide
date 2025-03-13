@@ -61,4 +61,3 @@ A detailed change history can be found in the [CHANGELOG.md](changelog.txt) file
 This repository provides tools and resources to improve DevOps infrastructure management and troubleshooting.
 
 Happy learning! 🚀
-
