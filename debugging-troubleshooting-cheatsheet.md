@@ -42,9 +42,13 @@ A guide to common debugging techniques and tools for troubleshooting systems.
 
 ## 💻 Common Laptop Maintenance
 - Keep the operating system and software up to date.
-- Regularly clean temporary files and unused programs.
-- Check battery health and optimize power settings.
+- Regularly clean temporary files and unused programs using tools like Disk Cleanup (Windows) or `bleachbit` (Linux).
+- Check battery health and optimize power settings using built-in tools
 - Clean the keyboard and vents to prevent overheating.
-- Run antivirus scans to ensure system security.
-- Backup important data regularly.
+- Run approved antivirus scans to ensure system security and performance. If the antvirusi is microsoft, use `mpcmdrun.exe` to run a full scan.
+- Backup important data following appoved policies and procedures. Dont do otherwise.
 - Check for driver updates to maintain hardware compatibility.
+- If chocolatey is installed, use `choco upgrade all` to update all installed packages.
+- Use `choco outdated` to check for outdated packages.
+- Use `choco list --local-only` to list all installed packages.
+- You can also update powershell to the latest version using `winget upgrade Microsoft.Powershell`.
