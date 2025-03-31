@@ -1,6 +1,12 @@
 Changelog
 =========
 
+Version 1.6 - [Date]
+--------------------
+- Added Git Repository Management Cheatsheet.
+- Added Pipelines Bash & PowerShell Cheatsheet.
+- Updated README.md to include new cheatsheets.
+
 Version 1.5 - [Date]
 --------------------
 - Added Windows Remote Restart Cheatsheet.
