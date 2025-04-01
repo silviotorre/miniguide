@@ -15,6 +15,7 @@ A detailed change history can be found in the [CHANGELOG.md](changelog.txt) file
 - 🐳 [Helm for AKS](aks-helm-cheatsheet.md) - Essential commands for managing Helm on AKS.
 - ☸️ [Azure AKS](aks-cheatsheet.md) - Guide to managing Kubernetes clusters on Azure.
 - 💻 [AKS PowerShell Commands](aks.md) - PowerShell commands for administering AKS.
+- 📜 [Kubectl Cheatsheet](kubectl-cheatsheet.md) - Common `kubectl` commands for managing Kubernetes.
 
 ### 🏗️ Azure Infrastructure
 - 🎯 [Azure ACR](azure-acr-cheatsheet.md) - Managing Azure Container Registry.
@@ -61,6 +62,9 @@ A detailed change history can be found in the [CHANGELOG.md](changelog.txt) file
 - 📊 [Data Lifecycle](data-lifecycle-cheatsheet.md) - Automating data management and retention policies.
 - 🔑 [AD SSH & Certificate-Based Login](ad-ssh-cert-login-cheatsheet.md) - SSH authentication using Active Directory.
 - 🔄 [Pipelines in Bash & PowerShell](pipelines-bash-powershell-cheatsheet.md) - Examples of sorting, filtering, and presenting data using pipelines.
+
+### 🛠️ Troubleshooting & Debugging
+- 🐞 [Debugging & Troubleshooting](debugging-troubleshooting-cheatsheet.md) - Common debugging techniques and tools.
 
 ## 🎯 Conclusion
 This repository provides tools and resources to improve DevOps infrastructure management and troubleshooting.
