@@ -1,0 +1,4 @@
+// join-tables.kusto
+// Join two tables on a common field
+TableA
+| join kind=inner (TableB) on CommonField

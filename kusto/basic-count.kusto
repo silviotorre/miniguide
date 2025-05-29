@@ -1,0 +1,4 @@
+// basic-count.kusto
+// Count the total number of records in a table
+TableName
+| count

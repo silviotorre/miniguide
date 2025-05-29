@@ -1,0 +1,4 @@
+// distinct-values.kusto
+// Get distinct values for a specific field
+TableName
+| distinct Category

@@ -1,0 +1,4 @@
+// project-columns.kusto
+// Select only specific columns
+TableName
+| project TimeGenerated, Category, Value

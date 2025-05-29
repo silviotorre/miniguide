@@ -1,0 +1,4 @@
+// top-records.kusto
+// Return the top 10 records by descending Value
+TableName
+| top 10 by Value desc

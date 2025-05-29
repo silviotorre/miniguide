@@ -1,0 +1,4 @@
+// summarize-grouping.kusto
+// Group data by a field and count records per group
+TableName
+| summarize Count = count() by Category
