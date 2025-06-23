@@ -1,0 +1,5 @@
+// render-chart.kusto
+// Render a bar chart of counts by category
+TableName
+| summarize Count = count() by Category
+| render barchart

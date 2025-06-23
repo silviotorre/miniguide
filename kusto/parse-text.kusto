@@ -1,0 +1,4 @@
+// parse-text.kusto
+// Extract information from a string using parse
+TableName
+| parse LogText with "User:" UserName " Action:" ActionType

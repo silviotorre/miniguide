@@ -1,0 +1,4 @@
+// bin-operator.kusto
+// Group records into time bins (1 hour)
+TableName
+| summarize Count = count() by bin(TimeGenerated, 1h)
