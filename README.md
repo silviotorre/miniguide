@@ -7,7 +7,7 @@ This repository contains a collection of cheatsheets and guides to help DevOps p
 
 Welcome to the Miniguide repository! Here, you'll find cheatsheets and guides covering topics like Kubernetes (AKS), Helm, Azure DevOps, Azure Virtual Machines, Azure Storage, Azure SQL, Docker, Git, PowerShell, and more.
 
-A detailed change history can be found in the [CHANGELOG.md](changelog.txt) file.
+A detailed change history can be found in the [changelog](changelog.txt).
 
 ## 📂 Contents
 
@@ -44,6 +44,7 @@ A detailed change history can be found in the [CHANGELOG.md](changelog.txt) file
 - 🔧 [PowerShell REST API Modules](powershell-restapi-modules-cheatsheet.md) - Interacting with REST APIs via PowerShell.
 - 🛠️ [System Troubleshooting](system-troubleshooting-cheatsheet.md) - Commands for diagnosing and troubleshooting systems.
 - 💾 [Cache & Temporary Files](cache-temp-files-cheatsheet.md) - Managing cache and temporary files.
+- 👷🏼‍♂️ [Pipelines Bash and PowerShell Cheatsheet](pipelines-bash-powershell-cheatsheet.md) - Working with pipelines using Bash and PowerShell.
 
 ### 💻 Linux & Windows
 - 🐧 [Linux Cron](cron-linux-cheatsheet.md) - Scheduling tasks in Linux.
@@ -51,7 +52,6 @@ A detailed change history can be found in the [CHANGELOG.md](changelog.txt) file
 - 📜 [Bash, sed & awk](bash-sed-awk-cheatsheet.md) - Text processing commands in Bash.
 - 🖥️ [Windows Network Troubleshooting](windows-network-cheatsheet.md) - Resolving network issues in Windows.
 - 🔄 [Windows Remote Restart](windows-remote-restart-cheatsheet.md) - Commands for remote restart in Windows.
-- 👷🏼‍♂️ [Pipelines Bash and PowerShell Cheatsheet](pipelines-bash-powershell-cheatsheet.md): A guide for working with pipelines using Bash and PowerShell.
 
 ### 🔗 CLI & Automation
 - 🖥️ [Azure CLI](az-cli-cheatsheet.md) - Key Azure CLI commands.
@@ -61,7 +61,6 @@ A detailed change history can be found in the [CHANGELOG.md](changelog.txt) file
 - ⚙️[Git Repo Cheatsheet](git_repo_cheatsheet.md): A quick reference for common Git repository best practices.
 - 📊 [Data Lifecycle](data-lifecycle-cheatsheet.md) - Automating data management and retention policies.
 - 🔑 [AD SSH & Certificate-Based Login](ad-ssh-cert-login-cheatsheet.md) - SSH authentication using Active Directory.
-- 🔄 [Pipelines in Bash & PowerShell](pipelines-bash-powershell-cheatsheet.md) - Examples of sorting, filtering, and presenting data using pipelines.
 
 ### 🛠️ Troubleshooting & Debugging
 - 🐞 [Debugging & Troubleshooting](debugging-troubleshooting-cheatsheet.md) - Common debugging techniques and tools.
@@ -72,16 +71,16 @@ This repository provides tools and resources to improve DevOps infrastructure ma
 Happy learning! 🚀
 
 ## 📚 Resources
-- [Azure DevOps Documentation](https://docs.microsoft.com/en-us/azure/devops/?view=azure-devops)
-- [Azure CLI Documentation](https://docs.microsoft.com/en-us/cli/azure/?view=azure-cli-latest)
-- [Azure PowerShell Documentation](https://docs.microsoft.com/en-us/powershell/azure/?view=azps-7.1.0)
+- [Azure DevOps Documentation](https://learn.microsoft.com/azure/devops/)
+- [Azure CLI Documentation](https://learn.microsoft.com/cli/azure/)
+- [Azure PowerShell Documentation](https://learn.microsoft.com/powershell/azure/)
 - [Kubernetes Documentation](https://kubernetes.io/docs/home/)
 - [Docker Documentation](https://docs.docker.com/)
 - [Git Documentation](https://git-scm.com/doc)
 - [Bash Documentation](https://www.gnu.org/software/bash/manual/bash.html)
-- [PowerShell Documentation](https://docs.microsoft.com/en-us/powershell/)
+- [PowerShell Documentation](https://learn.microsoft.com/powershell/)
 - [SQL Documentation](https://dev.mysql.com/doc/)
-- [Azure Documentation](https://docs.microsoft.com/en-us/azure/?product=featured)
+- [Azure Documentation](https://learn.microsoft.com/azure/)
 - [Linux Documentation](https://www.kernel.org/doc/html/latest/index.html)
   
 ## 📝 License
