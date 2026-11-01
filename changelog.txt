@@ -1,10 +1,16 @@
 Changelog
 =========
 
+Maintenance resumed - 2026-11-01
+--------------------------------
+- Resumed repository maintenance after the 2025–2026 hiatus.
+- Kept the lightweight field-notes and cheatsheet model.
+- Started a progressive Cloud/DevOps refresh; no structural rewrite.
+
 Version 1.6 - [Date]
 --------------------
-- Added Kubectl  Cheatsheet.
-- Added generic debbugging troubleshooting and maintenance Cheatsheet.
+- Added Kubectl Cheatsheet.
+- Added generic debugging, troubleshooting and maintenance Cheatsheet.
 
 Version 1.6 - [Date]
 --------------------
