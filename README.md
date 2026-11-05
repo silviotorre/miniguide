@@ -1,15 +1,12 @@
 # Miniguide
 
-A collection of useful cheatsheets and guides for developers.
+Cloud/DevOps field notes and operational cheatsheets for senior engineers and architects.
 
-## 📌 Introduction
-This repository contains a collection of cheatsheets and guides to help DevOps professionals manage and troubleshoot various technologies and resources.
+Azure, Kubernetes, CI/CD, infrastructure, identity and troubleshooting. Platform engineering and agentic workload notes will be indexed as they land.
 
-Welcome to the Miniguide repository! Here, you'll find cheatsheets and guides covering topics like Kubernetes (AKS), Helm, Azure DevOps, Azure Virtual Machines, Azure Storage, Azure SQL, Docker, Git, PowerShell, and more.
+[Changelog](changelog.txt).
 
-A detailed change history can be found in the [changelog](changelog.txt).
-
-## 📂 Contents
+## Contents
 
 ### 🚀 Kubernetes & AKS
 - 🐳 [Helm for AKS](aks-helm-cheatsheet.md) - Essential commands for managing Helm on AKS.
@@ -64,11 +61,6 @@ A detailed change history can be found in the [changelog](changelog.txt).
 
 ### 🛠️ Troubleshooting & Debugging
 - 🐞 [Debugging & Troubleshooting](debugging-troubleshooting-cheatsheet.md) - Common debugging techniques and tools.
-
-## 🎯 Conclusion
-This repository provides tools and resources to improve DevOps infrastructure management and troubleshooting.
-
-Happy learning! 🚀
 
 ## 📚 Resources
 - [Azure DevOps Documentation](https://learn.microsoft.com/azure/devops/)
