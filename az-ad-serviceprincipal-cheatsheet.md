@@ -1,79 +1,49 @@
-# Azure AD & Service Principal Cheatsheet: Create, Manage, and Troubleshoot
+# Microsoft Entra ID — Service Principals and Workload Identity
 
-## Introduction
-This cheatsheet is aimed at DevOps professionals using Azure AD. It covers commands for creating, managing, and troubleshooting service principals and their role assignments.
+Azure CLI field notes. `az ad` remains the CLI command group; Azure AD is now Microsoft Entra ID.
 
-## Table of Contents
-- [Azure AD \& Service Principal Cheatsheet: Create, Manage, and Troubleshoot](#azure-ad--service-principal-cheatsheet-create-manage-and-troubleshoot)
-  - [Introduction](#introduction)
-  - [Table of Contents](#table-of-contents)
-    - [1. Create Service Principal](#1-create-service-principal)
-    - [2. List Service Principals](#2-list-service-principals)
-    - [3. Show Service Principal Details](#3-show-service-principal-details)
-    - [4. Delete Service Principal](#4-delete-service-principal)
-    - [5. Reset SP Credentials](#5-reset-sp-credentials)
-    - [6. List Role Assignments for SP](#6-list-role-assignments-for-sp)
-    - [7. Assign Role to SP](#7-assign-role-to-sp)
-    - [8. Remove Role from SP](#8-remove-role-from-sp)
-    - [9. Troubleshoot SP Login Issues](#9-troubleshoot-sp-login-issues)
-    - [10. Verify Effective Permissions](#10-verify-effective-permissions)
+## Identity selection
 
-<a id="create-sp"></a>
-### 1. Create Service Principal  
-```
-az ad sp create-for-rbac --name <appName> --role Contributor --scopes /subscriptions/<subscriptionId>
+| Workload | Preferred identity |
+| --- | --- |
+| Azure-hosted service | System- or user-assigned managed identity |
+| External CI/CD | Workload identity federation (OIDC), no stored client secret |
+| Legacy/non-federated automation | Service principal with certificate; rotate credentials |
+
+An app registration defines the application; its service principal is the tenant-local identity. Azure RBAC assignments authorize access to Azure resources. Microsoft Entra directory roles are separate.
+
+## Inspect
+
+```powershell
+az account show --query "{tenant:tenantId,subscription:id}" -o json
+az ad sp list --display-name "<name>" --query "[].{appId:appId,objectId:id}" -o table
+az ad sp show --id "<app-id>"
+az role assignment list --assignee "<sp-object-id>" --all -o table
 ```
 
-<a id="list-sp"></a>
-### 2. List Service Principals  
-```
-az ad sp list --filter "displayName eq '<appName>'" --output table
+## Provision and scope
+
+Prefer managed identity or OIDC federation. When a service principal is required:
+
+```powershell
+az ad sp create-for-rbac --name "<name>"
+az role assignment create --assignee "<app-id>" --role Reader --scope "/subscriptions/<subscription-id>/resourceGroups/<rg>"
 ```
 
-<a id="show-sp"></a>
-### 3. Show Service Principal Details  
-```
-az ad sp show --id <servicePrincipalId>
-```
+**Note:** `create-for-rbac` can emit a credential. Do not log or commit its output. Assign the narrowest role at the narrowest scope; avoid subscription-wide Contributor by default.
 
-<a id="delete-sp"></a>
-### 4. Delete Service Principal  
-```
-az ad sp delete --id <servicePrincipalId>
-```
+## Federation / OIDC
 
-<a id="reset-sp-credentials"></a>
-### 5. Reset SP Credentials  
-```
-az ad sp credential reset --name <appName> --credential-description "NewCred" --end-date "2025-01-01"
-```
+Configure a federated identity credential on the app registration or user-assigned managed identity. Match **issuer**, **subject**, and **audience** to the trusted workload. For GitHub Actions, grant `id-token: write` and use `azure/login@v2` with client, tenant and subscription IDs. Restrict the subject to the intended branch or environment; protect deployment environments separately.
 
-<a id="list-role-assignments"></a>
-### 6. List Role Assignments for SP  
-```
-az role assignment list --assignee <servicePrincipalId> --output table
-```
+## Troubleshooting
 
-<a id="assign-role-to-sp"></a>
-### 7. Assign Role to SP  
-```
-az role assignment create --assignee <servicePrincipalId> --role Reader --scope /subscriptions/<subscriptionId>
-```
+- **401 / invalid token:** issuer, audience, tenant, subject, token lifetime.
+- **403 / AuthorizationFailed:** inspect Azure RBAC scope, principal object ID, assignment propagation.
+- **No token:** check OIDC permissions, trust configuration, managed identity attachment.
+- **Credential expiry:** replace static secrets with federation or managed identity where supported.
 
-<a id="remove-role-from-sp"></a>
-### 8. Remove Role from SP  
-```
-az role assignment delete --assignee <servicePrincipalId> --role Reader --scope /subscriptions/<subscriptionId>
-```
+## References
 
-<a id="troubleshoot-sp-login"></a>
-### 9. Troubleshoot SP Login Issues  
-```
-az login --service-principal --username <appId> --password <passwordOrCert> --tenant <tenantId>
-```
-
-<a id="verify-permissions"></a>
-### 10. Verify Effective Permissions  
-```
-az role assignment list --assignee <servicePrincipalId> --query "[].{Role:roleDefinitionName, Scope:scope}" --output table
-```
+- [Azure CLI — service principals](https://learn.microsoft.com/en-us/cli/azure/ad/sp)
+- [GitHub Actions — Azure OIDC](https://learn.microsoft.com/en-us/azure/developer/github/connect-from-azure-openid-connect)
