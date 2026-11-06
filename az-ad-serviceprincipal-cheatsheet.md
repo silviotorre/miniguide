@@ -26,7 +26,7 @@ az role assignment list --assignee "<sp-object-id>" --all -o table
 Prefer managed identity or OIDC federation. When a service principal is required:
 
 ```powershell
-az ad sp create-for-rbac --name "<name>" --skip-assignment
+az ad sp create-for-rbac --name "<name>"
 az role assignment create --assignee "<app-id>" --role Reader --scope "/subscriptions/<subscription-id>/resourceGroups/<rg>"
 ```
 
