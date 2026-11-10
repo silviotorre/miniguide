@@ -1,89 +1,57 @@
-# Azure ACR Cheatsheet: Manage and Troubleshoot Azure Container Registry
+# Azure Container Registry (ACR) / OCI Field Notes
 
-## Introduction
-This cheatsheet is designed for DevOps personnel to quickly create, manage, and troubleshoot Azure Container Registry resources utilizing the Azure CLI.
+Replace placeholders before execution. Use Microsoft Entra identity and least-privilege repository access; avoid enabling the registry admin account.
 
-## Table of Contents
-- [Azure ACR Cheatsheet: Manage and Troubleshoot Azure Container Registry](#azure-acr-cheatsheet-manage-and-troubleshoot-azure-container-registry)
-  - [Introduction](#introduction)
-  - [Table of Contents](#table-of-contents)
-    - [1. Create ACR](#1-create-acr)
-    - [2. List ACRs](#2-list-acrs)
-    - [3. Show ACR Details](#3-show-acr-details)
-    - [4. Update ACR](#4-update-acr)
-    - [5. Delete ACR](#5-delete-acr)
-    - [6. Login to ACR](#6-login-to-acr)
-    - [7. Build Container Image](#7-build-container-image)
-    - [8. Run Task in ACR](#8-run-task-in-acr)
-    - [9. Import Image to ACR](#9-import-image-to-acr)
-    - [10. Repository Manifests](#10-repository-manifests)
+## Registry and authentication
 
-<a id="create-acr"></a>
-### 1. Create ACR  
-**Example:** Crea un nuovo registro ACR.  
-```
-az acr create --name <acrName> --resource-group <rg> --sku Basic --location <location>
+```powershell
+$acr = "<acr-name>"
+$registry = az acr show --name $acr --query loginServer -o tsv
+az login
+az acr login --name $acr
+az acr check-health --name $acr
 ```
 
-<a id="list-acrs"></a>
-### 2. List ACRs  
-**Example:** Elenca tutti i registri ACR nel gruppo di risorse.  
-```
-az acr list --resource-group <rg> --output table
+For CI, prefer workload identity federation or managed identity over long-lived service principal secrets. Grant **Container Registry Repository Reader/Writer** for ABAC-enabled registries; **AcrPull/AcrPush** for non-ABAC registries. Scope access to required repositories.
+
+## Images: build, inspect, promote
+
+```powershell
+az acr build --registry $acr --image app:1.0 .
+az acr repository list --name $acr -o table
+az acr repository show-tags --name $acr --repository app -o table
+az acr manifest list-metadata --registry $acr --name app -o table # Preview command group
+az acr import --name $acr --source "source.azurecr.io/app@sha256:<digest>" --image "app:1.0"
 ```
 
-<a id="show-acr-details"></a>
-### 3. Show ACR Details  
-**Example:** Mostra i dettagli di un registro ACR.  
-```
-az acr show --name <acrName> --resource-group <rg>
+Prefer immutable digests for deployment/promotion; a mutable tag is not provenance. Verify publisher, build provenance, signatures and SBOM before promotion. See the dedicated supply-chain notes when available.
+
+## OCI Helm charts
+
+Helm 3.8+ supports OCI by default. Legacy `az acr helm` commands were retired in September 2025.
+
+```powershell
+az acr login --name $acr
+helm package ./charts/app
+helm push app-1.0.0.tgz "oci://$registry/helm"
+helm pull "oci://$registry/helm/app" --version 1.0.0
 ```
 
-<a id="update-acr"></a>
-### 4. Update ACR  
-**Example:** Aggiorna le impostazioni (ad esempio, abilitare il contenitore admin).  
-```
-az acr update --name <acrName> --admin-enabled true
+Chart name/version come from `Chart.yaml`. OCI repository paths differ from legacy Helm index repositories.
+
+## Troubleshooting
+
+```powershell
+az account show -o table
+az acr show --name $acr --query "{loginServer:loginServer,publicNetworkAccess:publicNetworkAccess}" -o json
+az acr check-health --name $acr --yes
+docker manifest inspect "$registry/app:1.0"
 ```
 
-<a id="delete-acr"></a>
-### 5. Delete ACR  
-**Example:** Elimina un registro ACR.  
-```
-az acr delete --name <acrName> --resource-group <rg>
-```
+- **401**: expired login token or invalid credentials; refresh `az acr login`.
+- **403**: inspect RBAC/ABAC repository permissions and network restrictions.
+- **Manifest unknown**: check repository, tag/digest, architecture and artifact type.
+- **Network failure**: verify DNS, private endpoint, firewall and runner connectivity.
+- `az acr login --expose-token` supports headless clients without a Docker daemon; handle the returned token as a secret.
 
-<a id="login-to-acr"></a>
-### 6. Login to ACR  
-**Example:** Effettua il login al registro ACR per autenticarsi con Docker.  
-```
-az acr login --name <acrName>
-```
-
-<a id="build-container-image"></a>
-### 7. Build Container Image  
-**Example:** Costruisci un’immagine container e salvala nel registro ACR.  
-```
-az acr build --registry <acrName> --image <imageName>:<tag> .
-```
-
-<a id="run-task-in-acr"></a>
-### 8. Run Task in ACR  
-**Example:** Esegue un task per analisi o scansione dell’immagine.  
-```
-az acr run --registry <acrName> --cmd "echo Hello World" /dev/null
-```
-
-<a id="import-image-to-acr"></a>
-### 9. Import Image to ACR  
-**Example:** Importa un’immagine da un registro esterno.  
-```
-az acr import --name <acrName> --source <externalRegistry>/<repository>:<tag>
-```
-
-<a id="repository-manifests"></a>
-### 10. Repository Manifests  
-**Example:** Visualizza i manifesti del repository di un’immagine.  
-```
-az acr repository show-manifests --name <acrName> --repository <repositoryName>
-```
+References: [ACR authentication](https://learn.microsoft.com/en-us/azure/container-registry/container-registry-authentication) · [Managed identity](https://learn.microsoft.com/en-us/azure/container-registry/container-registry-authentication-managed-identity) · [Helm OCI](https://learn.microsoft.com/en-us/azure/container-registry/container-registry-helm-repos)
