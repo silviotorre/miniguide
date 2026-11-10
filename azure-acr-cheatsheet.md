@@ -20,7 +20,7 @@ For CI, prefer workload identity federation or managed identity over long-lived 
 az acr build --registry $acr --image app:1.0 .
 az acr repository list --name $acr -o table
 az acr repository show-tags --name $acr --repository app -o table
-az acr manifest list-metadata --registry $acr --name app -o table
+az acr manifest list-metadata --registry $acr --name app -o table # Preview command group
 az acr import --name $acr --source "source.azurecr.io/app@sha256:<digest>" --image "app:1.0"
 ```
 
