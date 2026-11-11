@@ -35,6 +35,7 @@ Azure, Kubernetes, CI/CD, infrastructure, identity and troubleshooting. Platform
 - 🔍 [Kusto Query Cheatsheet](kusto-cheatsheet.md) - Querying data with Kusto.
 
 ### 🛠️ DevOps & CI/CD
+- [CI/CD Delivery Field Notes](cicd-delivery-field-notes.md) - Identity, promotion, approvals and diagnostics.
 - 🔄 [Azure DevOps & Microsoft 365 Login](azure-devops-m365-login-cheatsheet.md) - Authentication for Azure DevOps.
 - 📂 [ADO Repos](ado-repos-cheatsheet.md) - Managing Azure DevOps repositories.
 - 🔨 [Docker](docker-cheatsheet.md) - Essential commands for managing Docker containers.
