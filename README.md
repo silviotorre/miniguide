@@ -36,6 +36,7 @@ Azure, Kubernetes, CI/CD, infrastructure, identity and troubleshooting. Platform
 
 ### 🛠️ DevOps & CI/CD
 - [CI/CD Delivery Field Notes](cicd-delivery-field-notes.md) - Identity, promotion, approvals and diagnostics.
+- [Software Supply Chain Field Notes](software-supply-chain-field-notes.md) - SBOM, provenance, signatures and release gates.
 - 🔄 [Azure DevOps & Microsoft 365 Login](azure-devops-m365-login-cheatsheet.md) - Authentication for Azure DevOps.
 - 📂 [ADO Repos](ado-repos-cheatsheet.md) - Managing Azure DevOps repositories.
 - 🔨 [Docker](docker-cheatsheet.md) - Essential commands for managing Docker containers.
