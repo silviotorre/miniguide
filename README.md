@@ -46,6 +46,9 @@ Azure, Kubernetes, CI/CD, infrastructure, identity and troubleshooting. Platform
 - 💾 [Cache & Temporary Files](cache-temp-files-cheatsheet.md) - Managing cache and temporary files.
 - 👷🏼‍♂️ [Pipelines Bash and PowerShell Cheatsheet](pipelines-bash-powershell-cheatsheet.md) - Working with pipelines using Bash and PowerShell.
 
+### Platform Engineering
+- [Platform Engineering Field Notes](platform-engineering-field-notes.md) - Golden paths, platform APIs, guardrails and SLOs.
+
 ### 💻 Linux & Windows
 - 🐧 [Linux Cron](cron-linux-cheatsheet.md) - Scheduling tasks in Linux.
 - 🔐 [Linux Permissions & Sudoers](linux-permissions-cheatsheet.md) - Managing file permissions and sudo access.
