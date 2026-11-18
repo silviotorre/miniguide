@@ -49,6 +49,7 @@ Azure, Kubernetes, CI/CD, infrastructure, identity and troubleshooting. Platform
 ### Platform Engineering
 - [Platform Engineering Field Notes](platform-engineering-field-notes.md) - Golden paths, platform APIs, guardrails and SLOs.
 - [OpenTelemetry Field Notes](opentelemetry-field-notes.md) - Traces, metrics, logs, propagation and Collector diagnostics.
+- [FinOps Field Notes](finops-field-notes.md) - Cost allocation, guardrails, unit economics and workload efficiency.
 
 ### 💻 Linux & Windows
 - 🐧 [Linux Cron](cron-linux-cheatsheet.md) - Scheduling tasks in Linux.
