@@ -35,9 +35,9 @@ Azure, Kubernetes, CI/CD, infrastructure, identity and troubleshooting. Platform
 - 🔍 [Kusto Query Cheatsheet](kusto-cheatsheet.md) - Querying data with Kusto.
 
 ### 🛠️ DevOps & CI/CD
-- [CI/CD Delivery Field Notes](cicd-delivery-field-notes.md) - Identity, promotion, approvals and diagnostics.
-- [Software Supply Chain Field Notes](software-supply-chain-field-notes.md) - SBOM, provenance, signatures and release gates.
-- [Policy as Code Field Notes](policy-as-code-field-notes.md) - CI validation, admission enforcement and drift checks.
+- 🚀 [CI/CD Delivery Field Notes](cicd-delivery-field-notes.md) - Identity, promotion, approvals and diagnostics.
+- 🚚 [Software Supply Chain Field Notes](software-supply-chain-field-notes.md) - SBOM, provenance, signatures and release gates.
+- 📋 [Policy as Code Field Notes](policy-as-code-field-notes.md) - CI validation, admission enforcement and drift checks.
 - 🔄 [Azure DevOps & Microsoft 365 Login](azure-devops-m365-login-cheatsheet.md) - Authentication for Azure DevOps.
 - 📂 [ADO Repos](ado-repos-cheatsheet.md) - Managing Azure DevOps repositories.
 - 🔨 [Docker](docker-cheatsheet.md) - Essential commands for managing Docker containers.
@@ -46,10 +46,10 @@ Azure, Kubernetes, CI/CD, infrastructure, identity and troubleshooting. Platform
 - 💾 [Cache & Temporary Files](cache-temp-files-cheatsheet.md) - Managing cache and temporary files.
 - 👷🏼‍♂️ [Pipelines Bash and PowerShell Cheatsheet](pipelines-bash-powershell-cheatsheet.md) - Working with pipelines using Bash and PowerShell.
 
-### Platform Engineering
-- [Platform Engineering Field Notes](platform-engineering-field-notes.md) - Golden paths, platform APIs, guardrails and SLOs.
-- [OpenTelemetry Field Notes](opentelemetry-field-notes.md) - Traces, metrics, logs, propagation and Collector diagnostics.
-- [FinOps Field Notes](finops-field-notes.md) - Cost allocation, guardrails, unit economics and workload efficiency.
+### ⚙️ Platform Engineering
+- 🏗️ [Platform Engineering Field Notes](platform-engineering-field-notes.md) - Golden paths, platform APIs, guardrails and SLOs.
+- 📡 [OpenTelemetry Field Notes](opentelemetry-field-notes.md) - Traces, metrics, logs, propagation and Collector diagnostics.
+- ️💰 [FinOps Field Notes](finops-field-notes.md) - Cost allocation, guardrails, unit economics and workload efficiency.
 
 ### 💻 Linux & Windows
 - 🐧 [Linux Cron](cron-linux-cheatsheet.md) - Scheduling tasks in Linux.
