@@ -54,6 +54,9 @@ Azure, Kubernetes, CI/CD, infrastructure, identity and troubleshooting. Platform
 ### 🤖 AI Workloads
 - 🧠 [AI Workload Operations Field Notes](ai-workload-operations-field-notes.md) - Endpoint boundaries, latency, retries, token costs and evaluation.
 
+### 🧭 Agentic Systems
+- 🤖 [Agentic Workload Model](agentic-workload-model-field-notes.md) - Runtime primitives, lifecycle, approvals and recovery boundaries.
+
 ### 💻 Linux & Windows
 - 🐧 [Linux Cron](cron-linux-cheatsheet.md) - Scheduling tasks in Linux.
 - 🔐 [Linux Permissions & Sudoers](linux-permissions-cheatsheet.md) - Managing file permissions and sudo access.
