@@ -57,6 +57,7 @@ Azure, Kubernetes, CI/CD, infrastructure, identity and troubleshooting. Platform
 ### 🧭 Agentic Systems
 - 🤖 [Agentic Workload Model](agentic-workload-model-field-notes.md) - Runtime primitives, lifecycle, approvals and recovery boundaries.
 - 🧭 [Agent Orchestration Field Notes](agent-orchestration-field-notes.md) - Routing, queues, concurrency, retries and approval gates.
+- 🔐 [Agent Identity and Isolation Field Notes](agent-identity-isolation-field-notes.md) - Scoped credentials, tool authorization, sandbox and tenant boundaries.
 
 ### 💻 Linux & Windows
 - 🐧 [Linux Cron](cron-linux-cheatsheet.md) - Scheduling tasks in Linux.
