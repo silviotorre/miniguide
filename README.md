@@ -59,6 +59,8 @@ Azure, Kubernetes, CI/CD, infrastructure, identity and troubleshooting. Platform
 - 🧭 [Agent Orchestration Field Notes](agent-orchestration-field-notes.md) - Routing, queues, concurrency, retries and approval gates.
 - 🔐 [Agent Identity and Isolation Field Notes](agent-identity-isolation-field-notes.md) - Scoped credentials, tool authorization, sandbox and tenant boundaries.
 
+- 📡 [Agent Observability and Reliability Field Notes](agent-observability-reliability-field-notes.md) - Run tracing, SLOs, recovery and execution budgets.
+
 ### 💻 Linux & Windows
 - 🐧 [Linux Cron](cron-linux-cheatsheet.md) - Scheduling tasks in Linux.
 - 🔐 [Linux Permissions & Sudoers](linux-permissions-cheatsheet.md) - Managing file permissions and sudo access.
