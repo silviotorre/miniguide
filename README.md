@@ -2,7 +2,7 @@
 
 Cloud/DevOps field notes and operational cheatsheets for senior engineers and architects.
 
-Azure, Kubernetes, CI/CD, infrastructure, identity and troubleshooting. Platform engineering and agentic workload notes will be indexed as they land.
+Azure, Kubernetes, CI/CD, infrastructure, identity and troubleshooting, extending into platform engineering, AI workloads and agent harness engineering.
 
 [Changelog](changelog.txt).
 
@@ -60,6 +60,7 @@ Azure, Kubernetes, CI/CD, infrastructure, identity and troubleshooting. Platform
 - 🔐 [Agent Identity and Isolation Field Notes](agent-identity-isolation-field-notes.md) - Scoped credentials, tool authorization, sandbox and tenant boundaries.
 
 - 📡 [Agent Observability and Reliability Field Notes](agent-observability-reliability-field-notes.md) - Run tracing, SLOs, recovery and execution budgets.
+- 🧰 [Agent Harness Engineering Field Notes](agent-harness-engineering-field-notes.md) - Platform disciplines applied to agent runtime boundaries, policy, recovery and budgets.
 
 ### 💻 Linux & Windows
 - 🐧 [Linux Cron](cron-linux-cheatsheet.md) - Scheduling tasks in Linux.
